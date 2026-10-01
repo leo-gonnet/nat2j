@@ -1,0 +1,7 @@
+* smallest thing that works end to end
+DEFINE DATA LOCAL
+1 #MESSAGE (A20)
+END-DEFINE
+MOVE 'Hello, Vienna' TO #MESSAGE
+WRITE #MESSAGE
+END

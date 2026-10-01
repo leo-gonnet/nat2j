@@ -1,0 +1,16 @@
+* Natural pads both sides out before comparing, so A5 'AB' equals A8 'AB'
+DEFINE DATA LOCAL
+1 #A (A5)
+1 #B (A8)
+END-DEFINE
+MOVE 'AB' TO #A
+MOVE 'AB' TO #B
+IF #A = #B
+  WRITE 'equal'
+ELSE
+  WRITE 'different'
+END-IF
+IF #A < 'AC'
+  WRITE 'less'
+END-IF
+END

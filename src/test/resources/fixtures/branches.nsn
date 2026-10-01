@@ -1,0 +1,19 @@
+* IF with AND, OR and NOT
+DEFINE DATA LOCAL
+1 #N (I4)
+END-DEFINE
+MOVE 7 TO #N
+IF #N > 5 AND #N < 10
+  WRITE 'in range'
+ELSE
+  WRITE 'out of range'
+END-IF
+IF #N = 3 OR #N = 7
+  WRITE 'three or seven'
+END-IF
+IF NOT #N = 7
+  WRITE 'not seven'
+ELSE
+  WRITE 'seven'
+END-IF
+END

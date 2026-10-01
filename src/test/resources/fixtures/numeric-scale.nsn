@@ -1,0 +1,10 @@
+* Natural truncates, it does not round, so 12.349 into an N7.2 is 12.34
+DEFINE DATA LOCAL
+1 #AMOUNT (N7,2)
+1 #COUNT  (N3)
+END-DEFINE
+MOVE 12.349 TO #AMOUNT
+MOVE 7 TO #COUNT
+WRITE #AMOUNT
+WRITE #COUNT
+END

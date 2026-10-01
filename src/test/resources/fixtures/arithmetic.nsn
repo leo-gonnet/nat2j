@@ -1,0 +1,22 @@
+* COMPUTE, and division taking its scale from the field it lands in
+DEFINE DATA LOCAL
+1 #A (N7,2)
+1 #B (N7,2)
+1 #R (N7,2)
+1 #W (N7,4)
+END-DEFINE
+MOVE 10 TO #A
+MOVE 4 TO #B
+COMPUTE #R = #A + #B
+WRITE #R
+COMPUTE #R = #A - #B
+WRITE #R
+COMPUTE #R = #A * #B
+WRITE #R
+COMPUTE #R = #A / #B
+WRITE #R
+COMPUTE #W = #A / 3
+WRITE #W
+#R := 1.5 * 2
+WRITE #R
+END

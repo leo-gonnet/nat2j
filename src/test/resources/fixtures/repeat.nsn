@@ -1,0 +1,11 @@
+* REPEAT runs the body once before it tests
+DEFINE DATA LOCAL
+1 #I (I4)
+END-DEFINE
+MOVE 5 TO #I
+REPEAT
+  WRITE #I
+  COMPUTE #I = #I + 1
+UNTIL #I > 7
+END-REPEAT
+END

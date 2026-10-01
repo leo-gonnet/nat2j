@@ -1,0 +1,10 @@
+* A fields are fixed width: too long gets cut, too short gets padded
+DEFINE DATA LOCAL
+1 #SHORT (A5)
+1 #LONG  (A12)
+END-DEFINE
+MOVE 'ABCDEFGH' TO #SHORT
+MOVE 'HI' TO #LONG
+WRITE #SHORT
+WRITE #LONG '|'
+END

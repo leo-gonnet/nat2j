@@ -1,0 +1,8 @@
+* #NEVER-READ should not survive into the generated class
+DEFINE DATA LOCAL
+1 #USED       (A6)
+1 #NEVER-READ (N5,2)
+END-DEFINE
+MOVE 'nat2j' TO #USED
+WRITE #USED
+END

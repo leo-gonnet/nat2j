@@ -1,0 +1,7 @@
+* keywords are case insensitive and this line is a comment
+define data local
+1 #w (a8)
+end-define
+move 'lower' to #w        /* an inline comment runs to end of line
+write #w
+end
